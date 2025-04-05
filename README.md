@@ -5,4 +5,4 @@
 
 # Changelog
 -> **05.04.2025**<br>
-    - Initial release
+    <p>- Initial release</p>
