@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_Pong.mk
+    $(LOCAL_DIR)/lineage_Pong.mk
 
 COMMON_LUNCH_CHOICES := \
-    infinity_Pong-user \
-    infinity_Pong-userdebug \
-    infinity_Pong-eng
+    lineage_Pong-user \
+    lineage_Pong-userdebug \
+    lineage_Pong-eng

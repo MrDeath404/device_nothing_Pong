@@ -12,33 +12,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/nothing/Pong/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := infinity_Pong
+PRODUCT_NAME := lineage_Pong
 PRODUCT_DEVICE := Pong
 PRODUCT_MANUFACTURER := nothing
 PRODUCT_BRAND := Nothing
 PRODUCT_MODEL := A065
 
-# Maintainer Name
-INFINITY_MAINTAINER := GHOST
+# BLKI Flags
 
-# OFFICIAL Maintainer
-INFINITY_BUILD_TYPE := OFFICIAL
+WITH_GMS := false
 
-# Gapps:
-WITH_GAPPS := true
-TARGET_BUILD_GOOGLE_TELEPHONY := true
-TARGET_SHIPS_FULL_GAPPS := true
-
-# UDFPS
 TARGET_HAS_UDFPS := true
-
-# Quick Tap
-TARGET_SUPPORTS_QUICK_TAP := true
-
-# Whether the package supports BLURS
-TARGET_SUPPORTS_BLUR := true
+TARGET_ENABLE_BLUR := true
+BLACKIRON_BUILDTYPE := UNOFFICIAL
+BLACKIRON_MAINTAINER := MrDeath
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
