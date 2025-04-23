@@ -31,3 +31,17 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=A065 \
     SystemDevice=Pong \
     SystemName=Pong
+
+# Black Iron build flags
+
+WITH_GMS := true
+WITH_GMS_VARIANT := pico
+
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+BLACKIRON_BUILDTYPE := UNOFFICIAL
+BLACKIRON_MAINTAINER := MrDeath
+
+# Phone Specify Package Remove
+
+TARGET_USE_REMOVEPACKAGE := true
