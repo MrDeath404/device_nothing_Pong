@@ -20,6 +20,22 @@
 	android.title="@string/device_title">
 
     <PreferenceCategory
+        android:key="Nothing Addons"
+        android:title="@string/nothing_addons_title">
+
+    <Preference
+        android:key="glyph_settings"
+        android:title="@string/glyph_settings_title"
+        android:summary="@string/glyph_settings_summary"
+        android:icon="@drawable/ic_glyphs_logo">
+        <intent
+            android:targetPackage="co.aospa.glyph"
+            android:targetClass="co.aospa.glyph.Settings.SettingsActivity" />
+    </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="usb"
         android:title="@string/usb_title">
         

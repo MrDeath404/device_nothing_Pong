@@ -20,6 +20,13 @@
     <string name="device_title">Device Extras</string>
     <string name="device_summary">Adjust device specific settings</string>
 
+    <!-- Nothing -->
+    <string name="nothing_addons_title">Nothing Addons</string>
+
+    <!-- Glyph -->
+    <string name="glyph_settings_title">Glyph interface</string>
+    <string name="glyph_settings_summary">Options for Glyph lights</string>
+
     <!-- USB -->
     <string name="usb_title">USB</string>
     <string name="otg_mode_title">USB-OTG</string>
