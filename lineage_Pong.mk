@@ -35,7 +35,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Black Iron build flags
 
 WITH_GMS := true
-WITH_GMS_VARIANT := pico
+WITH_GMS_VARIANT := superlite
 
 TARGET_HAS_UDFPS := true
 TARGET_ENABLE_BLUR := true
