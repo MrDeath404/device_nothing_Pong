@@ -16,7 +16,8 @@ LOCAL_OVERRIDES_PACKAGES := \
     Glimpse \
     Dialer \
     messaging \
-    Contacts
+    Contacts \
+    AudioFX
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
