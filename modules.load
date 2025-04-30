@@ -237,3 +237,5 @@ msm_drm.ko
 msm-eva.ko
 msm-mmrm.ko
 msm_video.ko
+cfg80211.ko
+mac80211.ko

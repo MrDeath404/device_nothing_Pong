@@ -87,3 +87,5 @@ c1dcvs_scmi.ko
 bcl_pmic5.ko
 nfc_i2c.ko
 cpuprime_online_helper.ko
+cfg80211.ko
+mac80211.ko
