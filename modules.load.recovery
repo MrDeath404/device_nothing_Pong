@@ -13,7 +13,6 @@ qcom-cpufreq-hw.ko
 sched-walt.ko
 thermal_pause.ko
 cpu_hotplug.ko
-cfg80211.ko
 clk-dummy.ko
 clk-qcom.ko
 cmd-db.ko
@@ -33,7 +32,6 @@ hwkm.ko
 icc-bcm-voter.ko
 iommu-logger.ko
 llcc-qcom.ko
-mac80211.ko
 mem_buf_dev.ko
 mem_buf.ko
 mem-hooks.ko
@@ -282,3 +280,5 @@ snd_event_dlkm.ko
 q6_notifier_dlkm.ko
 q6_pdr_dlkm.ko
 adsp_loader_dlkm.ko
+cfg80211.ko
+mac80211.ko

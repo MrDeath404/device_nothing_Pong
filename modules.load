@@ -237,8 +237,5 @@ msm_drm.ko
 msm-eva.ko
 msm-mmrm.ko
 msm_video.ko
-arm_qcom_cpufreq_hw.ko
-arm_smmu.ko
-awinic_haptic_hv.ko
-btfm_slim.ko
-chr_dev_sg.ko
+cfg80211.ko
+mac80211.ko
