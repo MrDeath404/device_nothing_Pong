@@ -1,3 +1,4 @@
 # Camera
 vendor.camera.aux.packagelist=com.android.camera,org.lineageos.aperture,com.snapchat.android
 
+ro.min_pointer_dur=80
