@@ -25,4 +25,6 @@ public:
     int write_value(const char *file, const char *value);
     int write_value(const char *file, int value);
     string read_line(const char *file);
+    int get_tzn(string sensor_name);
+    int get_charge_temp();
 };
