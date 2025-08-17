@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from Pong device
 $(call inherit-product, device/nothing/Pong/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Voltage stuff.
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_Pong
+PRODUCT_NAME := voltage_Pong
 PRODUCT_DEVICE := Pong
 PRODUCT_MANUFACTURER := Nothing
 PRODUCT_BRAND := Nothing
@@ -22,9 +22,7 @@ PRODUCT_MODEL := A065
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
-LUNARIS_BUILD_TYPE := OFFICIAL
 TARGET_OPTIMIZED_DEXOPT := true
-WITH_GMS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-nothing
 
