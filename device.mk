@@ -237,21 +237,21 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
 
-# Lineage Health
+# Voltage Health
 PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
+    vendor.voltage.health-service.default
 
-$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/qcom-battery/charging_en)
+$(call soong_config_set,voltage_health,charging_control_charging_path,/sys/class/qcom-battery/charging_en)
 
-# Logging
- SPAMMY_LOG_TAGS := \
-    Diag_Lib \
-    KernelSU \
-    SDM \
-    AGM \
-    AHAL \
-    CamX \
-    minksocket
+# # Logging
+#  SPAMMY_LOG_TAGS := \
+#     Diag_Lib \
+#     KernelSU \
+#     SDM \
+#     AGM \
+#     AHAL \
+#     CamX \
+#     minksocket
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_VENDOR_PROPERTIES += \
@@ -347,7 +347,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.lineage-libperfmgr \
+    android.hardware.power-service.voltage-libperfmgr \
     libqti-perfd-client
 
 # Enable adpf cpu hint session for SurfaceFlinger and HWUI
@@ -360,9 +360,9 @@ PRODUCT_COPY_FILES += \
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare-service.default
+    vendor.voltage.powershare-service.default
 
-$(call soong_config_set,lineage_powershare,powershare_path,/sys/class/qcom-battery/wireless_boost_en)
+$(call soong_config_set,voltage_powershare,powershare_path,/sys/class/qcom-battery/wireless_boost_en)
 
 # QTI fwk-detect
 PRODUCT_PACKAGES += \
@@ -404,7 +404,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/voltage/interfaces/power-libperfmgr \
     hardware/qcom-caf/common/libqti-perfd-client 
 
 # Shims
@@ -518,9 +518,3 @@ PRODUCT_PACKAGES += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/nothing/Pong/Pong-vendor.mk)
-
-# Remove unwanted packages
-ifeq ($(TARGET_USE_REMOVEPACKAGE),true)
-PRODUCT_PACKAGES += \
-    RemovePackages
-endif
