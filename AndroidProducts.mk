@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/blackiron_Pong.mk
+    $(LOCAL_DIR)/lineage_Pong.mk
 
 COMMON_LUNCH_CHOICES := \
-    blackiron_Pong-user \
-    blackiron_Pong-userdebug \
-    blackiron_Pong-eng
+    lineage_Pong-user \
+    lineage_Pong-userdebug \
+    lineage_Pong-eng

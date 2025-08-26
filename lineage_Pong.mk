@@ -12,9 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/nothing/Pong/device.mk)
 
 # Inherit some common BlackIron stuff.
-$(call inherit-product, vendor/blackiron/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := balckiron_Pong
+PRODUCT_NAME := lineage_Pong
 PRODUCT_DEVICE := Pong
 PRODUCT_MANUFACTURER := Nothing
 PRODUCT_BRAND := Nothing
@@ -25,7 +25,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-nothing
 WITH_GMS := false
 TARGET_HAS_UDFPS := true
 TARGET_ENABLE_BLUR := true
-TARGET_INCLUDE_FIRMWARE = true
+TARGET_INCLUDE_FIRMWARE = false
 BLACKIRON_BUILDTYPE := TEST
 BLACKIRON_MAINTAINER := MrDeath
 
